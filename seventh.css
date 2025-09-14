@@ -58,10 +58,11 @@ p {
 section {
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 50px;
+    width: 100%;
     
 }
-
 #review {
     border: 1px solid hsl(300, 24%, 96%);
     background-color:  hsl(300, 24%, 96%);
@@ -70,6 +71,8 @@ section {
     width: 350px;
     text-align: center;
      border-radius: 8px;
+     display: flex;
+     align-items: center;
     
 }
 
@@ -81,6 +84,8 @@ section {
     width: 350px;
     text-align: center;
      border-radius: 8px;
+     display: flex;
+     align-items: center;
 }
 
 #report {
@@ -91,12 +96,15 @@ section {
     width: 350px;
     text-align: center;
      border-radius: 8px;
+     display: flex;
+     align-items: center;
 }
 
 .container {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    width: 100%;
 }
     
 article {
@@ -105,7 +113,7 @@ background-color: hsl(300, 43%, 22%);
 }
 
 #colton {
-    margin: 20px 5px 10px 10px;
+    margin: 20px 5px 10px 0px;
      border-radius: 8px;
      padding: 10px 0px 10px 20px;
      width: 230px;
@@ -161,18 +169,51 @@ background-color: hsl(300, 43%, 22%);
     margin: 15px 0px 20px 0px;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 780px) {
     main {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        width: 70%;
-        padding: 30px;
+        width: 60%;
+        padding: 30px 0;
     }
 
     section {
         display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .nav{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
+    } 
+
+    h1 {
+        font-size: 28px;
+        width: 250px;
+        text-align: center;
+        margin: 0;
+        padding-bottom: 20px;
+    }
+
+    #we {
+        line-height: 24px;
+        font-size: 18px;
+        text-align: center;
+        width: 300px;
+         margin: 0;
+    }
+
+    content {
+         display: flex;
         flex-direction: column;
         width: 100%;
         justify-content: center;
@@ -185,17 +226,40 @@ background-color: hsl(300, 43%, 22%);
         width: 100%;
         justify-content: center;
         align-items: center;
+        margin: 0;
     }
 
+    #review {
+         width: 100%;
+         margin: 0;
+         display: flex;
+         flex-direction: column;
+    }
+
+
     #report {
-        margin: 15px 0px 15px 40px;
+        margin: 20px 0;
+        width: 100%;
+        display: flex;
+         flex-direction: column;
     }
 
     #tech {
-        margin-left: 40px;
+         margin: 0 0 30px;
+        width: 100%;
+        display: flex;
+         flex-direction: column;
     }
 
-    article {
+    #colton, #irene, #anne{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .pur {
         width: 100%;
     }
 }
